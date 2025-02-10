@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JUP THE GOAT</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/logo.jpg" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- lightbox2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
+      integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="overflow-hidden">
+    <!-- Music -->
+    <audio
+      class="audio"
+      src="assets/audio/pump.mp3"
+      autoplay
+      type="audio"
+      loop
+    ></audio>
+    <!-- Sfx Door -->
+    <audio id="doorSound" src="assets/audio/beep.mp3"></audio>
+
+    <!-- door section -->
+    <div id="door-section" class="open" onclick="mulai()">
+      <div class="pumpit">
+        <div class="button pump">
+          <a
+            class="rounded-pill text-decoration-none btn btn-lg btn-get-started py-3"
+            ><i class="fa-solid fa-hand-fist"></i> CLICK TO PUMP
+            IT UP!</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- content section -->
+    <div id="content-section">
+      <!-- navbar -->
+      <ul class="nav">
+        <span class="nav-music"></span>
+
+      <li>
+          <a href="#home-section">
+            <i class="fa-solid fa-house"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#why-section">
+            <i class="fa-solid fa-question"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#chart-section">
+            <i class="fa-solid fa-chart-simple"></i>
+          </a>
+        </li>
+     
+        <li>
+          <a
+            href="#"
+            class="nav-item-music rotate"
+            id="musicButton"
+            onclick="toggleMusic(event)"
+          >
+            <i class="fas fa-fw fa-compact-disc"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#gallery-section">
+            <i class="fas fa-fw fa-image"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#gift-section">
+            <i class="fas fa-fw fa-gift"></i>
+          </a>
+        </li>
+           <li>
+          <a href="#how-to-buy-section">
+            <i class="fa-solid fa-money-bill"></i>
+          </a>
+        </li>
+        
+      </ul>
+
+      <!-- hero section -->
+      <section id="hero-section" class="d-flex align-items-center">
+        <img src="assets/img/sparkle.gif" alt="sparkle" class="sparkle" />
+        <div class="container text-center">
+          <h4 class="my-2 text-white">Dear, Catdets</span></h4>
+          <!-- <h4 class="my-2 text-white">To Holders <span id="namaSambutan"></span></h4> -->
+          <h4 class="my-2 text-white fw-bold">
+            Help us to moon this, it's fine to Take some profit, but leave
+            a moonbag
+          </h4>
+          <h4 class="my-2 text-white fw-bold">ENJOY THE RIDE</h4>
+          <!-- <h4 class="my-2 text-white">THIS SHIT WILL MOON IN</h4> -->
+
+          <!-- <div
+            class="row my-3 d-flex justify-content-center"
+            id="countdown-wedding"
+          >
+            <div class="col-lg-1 col-3">
+              <div class="text-center p-2 rounded text-light">
+                <h5>5</h5>
+                Days
+              </div>
+            </div>
+            <div class="col-lg-1 col-3">
+              <div class="text-center p-2 rounded text-light">
+                <h5>2</h5>
+                Hours
+              </div>
+            </div>
+            <div class="col-lg-1 col-3">
+              <div class="text-center p-2 rounded text-light">
+                <h5>2</h5>
+                Minutes
+              </div>
+            </div>
+            <div class="col-lg-1 col-3">
+              <div class="text-center p-2 rounded text-light">
+                <h5>3</h5>
+                Seconds
+              </div>
+            </div>
+          </div> -->
+          <a
+            href="#home-section"
+            class="rounded-pill text-decoration-none btn btn-lg btn-get-started py-3"
+            ><i class="fa-solid fa-hand-fist"></i> CLICK TO PUMP THE GOAT!</a
+          >
+        </div>
+      </section>
+
+    <!-- Home Section -->
+<section id="home-section" class="home-section section-bg py-5">
+  <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+    <div class="row align-items-center">
+      
+      <!-- Kolom Teks (Kiri) -->
+      <div class="col-lg-6 order-lg-1 text-center text-lg-start">
+        <div class="section-title">
+          <h1 class="text-white fw-bold">$JUPTHEGOAT</h1>
+          <!-- <p class="text-white">Catdets will Conquer the world</p> -->
+          <p id="copyButton2" class="btn btn-outline-primary copy-button2" 
+             onclick="copyToClipboard(this, 'AzJYGdSmvfLSYaUi4zAf2ENkeyVLG9skm9Uqwnyc3PKz')">
+            CA: AzJYGdSmvfLSYaUi4zAf2ENkeyVLG9skm9Uqwnyc3PKz
+          </p>
+        </div>
+
+        <!-- Tombol Sosial Media -->
+        <div class="d-grid gap-4"> 
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a class="btn btn-lg btn-pink rounded-pill text-center" href="https://x.com/JUPTHEGOAT" target="_blank">
+              <i class="fa-brands fa-x-twitter"></i> X
+            </a>
+            <a class="btn btn-lg btn-pink rounded-pill text-center" href="https://t.me/+lgndpfd3xYE4NmY1" target="_blank">
+              <i class="fa-brands fa-telegram"></i> Telegram
+            </a>
+          </div>
+
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a class="btn btn-lg btn-pink rounded-pill text-center" href="https://jup.ag/" target="_blank">
+              <i class="fa-brands fa-chart-line"></i> Jupiter
+            </a>
+            <a class="btn btn-lg btn-pink rounded-pill text-center" href="https://dexscreener.com/" target="_blank">
+              <i class="fa-solid fa-chart-line"></i> Dexscreener
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kolom Gambar (Kanan) -->
+      <div class="col-lg-6 order-lg-2 text-center">
+        <img src="assets/img/logo.jpg" alt="JUPTHEGOAT" class="img-fluid rounded-pill" style="max-width: 100%; height: auto;">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+           <!-- Section Model 3D & Tulisan -->
+<section id="model-section" class="py-5">
+  <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+    <div class="row align-items-center">
+      <!-- Kolom Kiri: Model 3D -->
+      <div class="col-lg-6 text-center">
+        <model-viewer 
+          src="models/cat2.glb" 
+          alt="3D Model Cat"
+          auto-rotate 
+          camera-controls
+          disable-zoom
+          style="width: 100%; max-width: 500px; height: 500px;">
+        </model-viewer>
+      </div>
+
+      <!-- Kolom Kanan: Tulisan -->
+      <div class="col-lg-6 text-center text-lg-start">
+        <h2 class="fw-bold text-black">CATDETS WILL CONQUER THE WORLD</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!-- acara section -->
+      <section id="why-section" class="why-section py-5">
+        <div
+          class="container"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="section-title">
+                <h1 class="text-black fw-bold">
+                  Why you should buy?
+                </h1>
+              </div>
+
+              <div class="row px-3 text-center">
+                <div
+                  class="col-lg-6 border my-2 rounded p-3 card-acara"
+                  data-aos="fade-right"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500"
+                >
+                  <h4>$JUPTHEGOAT</h4>
+                  <hr />
+                  <p><i class=""></i>PERFECT TICKER</p>
+                  <p><i class=""></i>YOU ARE SMART CATDETS</p>
+                  <p><i class=""></i>THERE IS NO REASON NOT TO BUY IT </p>
+                  <a
+                    class="btn btn-lg btn-pink rounded-pill"
+                    href="https://jup.ag/swap/SOL-AzJYGdSmvfLSYaUi4zAf2ENkeyVLG9skm9Uqwnyc3PKz"
+                    target="_blank"
+                    ></i> Buy Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lokasi Section -->
+      <section id="chart-section" class="chart-section py-5 section-bg">
+        <div
+          class="container"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="section-title">
+                <h1 class="text-white fw-bold">LIVE CHART</h1>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-lg-12 text-center">
+                  <a
+                    class="btn btn-lg btn-pink mb-4 rounded-pill"
+                    href="https://dexscreener.com/solana/f5nmbwwgg8y1ccym7r4ygeidxygq1npatop7s6ocgaty"
+                    target="_blank"
+                    ><i class=""></i>Go To Dexscreener</a
+                  >
+                  <style>
+                    #dexscreener-embed {
+                      position: relative;
+                      width: 100%;
+                      padding-bottom: 125%;
+                    }
+                    @media (min-width: 1400px) {
+                      #dexscreener-embed {
+                        padding-bottom: 65%;
+                      }
+                    }
+                    #dexscreener-embed iframe {
+                      position: absolute;
+                      width: 100%;
+                      height: 100%;
+                      top: 0;
+                      left: 0;
+                      border: 0;
+                    }
+                  </style>
+                  <div id="dexscreener-embed">
+                    <iframe
+                      src="https://dexscreener.com/solana/F5nmbwWGg8y1cCYM7r4YGEidXyGQ1npAToP7s6oCGaTy?embed=1&loadChartSettings=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=15"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- love story section -->
+      <section id="how-to-buy-section" class="how-to-buy-section py-5">
+        <div
+          class="container"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          <div class="section-title">
+            <h1 class="text-black fw-bold">How to Buy?</h1>
+            <p>Follow the Catdets steps below to get some $JUPTHEGOAT or you can Contact one of our helpful groupchat Catdets if you have any questions. </p>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg">
+              <ul class="timeline">
+                <li
+                  data-aos="fade-right"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500"
+                >
+                  <div
+                    class="timeline-badge"
+                    style="
+                      background-image: url('assets/img/gallery/cat2.png');
+                    "
+                  ></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h3 class="timeline-title">
+                       Step 1
+                      </h3>
+                      <h1 class="timeline-date " style="font-weight: bold;">Get a wallet</h1>
+                    </div>
+                    <div class="timeline-body">
+                      <p>
+                        You'll need a wallet like Phantom to store your $JUPTHEGOAT tokens. 
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  class="timeline-inverted"
+                  data-aos="fade-left"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500"
+                >
+                  <div
+                    class="timeline-badge"
+                    style="
+                      background-image: url('assets/img/gallery/cat2.png');
+                    "
+                  ></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h3 class="timeline-title">Step 2</h3>
+                      <h1 class="timeline-date " style="font-weight: bold;">Get some SOL</h1>
+                    </div>
+                    <div class="timeline-body">
+                      <p>
+                        $JUPTHEGOAT is on Solana Chain, so you'll need some SOL tokens to purchase it. 
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  data-aos="fade-right"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500"
+                >
+                  <div
+                    class="timeline-badge"
+                    style="
+                      background-image: url('assets/img/gallery/cat2.png');
+                    "
+                  ></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h3 class="timeline-title">Step 3</h3>
+                      <h1 class="timeline-date " style="font-weight: bold;">Buy on DEX</h1>
+                    </div>
+                    <div class="timeline-body">
+                      <p>
+                      Go to Jupiter, paste the token's CA and choose the amount of SOL you want to spend. 
+                      </p>
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="timeline-inverted"
+                  data-aos="fade-left"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500"
+                >
+                  <div
+                    class="timeline-badge"
+                    style="
+                      background-image: url('assets/img/gallery/cat2.png');
+                    "
+                  ></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h3 class="timeline-title">Step 4</h3>
+                      <h1 class="timeline-date " style="font-weight: bold;">Hold</h1>
+                    </div>
+                    <div class="timeline-body">
+                      <p>
+                        Hold the $JUPTHEGOAT, Enjoy The Ride !
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- gallery section -->
+      <section id="gallery-section" class="gallery-section py-5 section-bg">
+        <div
+          class="container"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          <div class="section-title">
+            <h1 class="text-white fw-bold">Catdets</h1>
+          </div>
+
+          <div class="row" data-masonry='{"percentPosition": true }'>
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <a
+                href="assets/img/gallery/singer.jpg"
+                data-lightbox="JUPTHEGOAT"
+                class="text-decoration-none"
+              >
+                <img
+                  src="assets/img/gallery/singer.jpg"
+                  alt="JUPTHEGOAT"
+                  class="card-img border-pink"
+                />
+              </a>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <a
+                href="assets/img/gallery/meow.jpg"
+                data-lightbox="JUPTHEGOAT"
+                class="text-decoration-none"
+              >
+                <img
+                  src="assets/img/gallery/meow.jpg"
+                  alt="JUPTHEGOAT"
+                  class="card-img border-pink"
+                />
+              </a>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4"> 
+              <a
+                href="assets/img/gallery/programmer.jpg"
+                data-lightbox="JUPTHEGOAT"
+                class="text-decoration-none"
+              >
+                <img
+                  src="assets/img/gallery/programmer.jpg"
+                  alt="JUPTHEGOAT"
+                  class="card-img border-pink"
+                />
+              </a>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <a
+                href="assets/img/gallery/cat2.png"
+                data-lightbox="JUPTHEGOAT"
+                class="text-decoration-none"
+              >
+                <img
+                  src="assets/img/gallery/cat2.png"
+                  alt="JUPTHEGOAT"
+                  class="card-img border-pink"
+                />
+              </a>
+            </div>
+            <!-- <div class="col-sm-6 col-lg-4 mb-4">
+              <a
+                href="assets/img/gallery/meme5.jpg"
+                data-lightbox="JUPTHEGOAT"
+                class="text-decoration-none"
+              >
+                <img
+                  src="assets/img/gallery/meme5.jpg"
+                  alt="JUPTHEGOAT"
+                  class="card-img border-pink"
+                />
+              </a>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <a
+                href="assets/img/gallery/meme6.jpg"
+                data-lightbox="JUPTHEGOAT"
+                class="text-decoration-none"
+              >
+                <img
+                  src="assets/img/gallery/meme6.jpg"
+                  alt="JUPTHEGOAT"
+                  class="card-img border-pink"
+                />
+              </a>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <a
+                href="assets/img/gallery/meme7.jpg"
+                data-lightbox="nobitaShizuka"
+                class="text-decoration-none"
+              >
+                <img
+                  src="assets/img/gallery/meme7.jpg"
+                  alt="nobita & shizuka"
+                  class="card-img border-pink"
+                />
+              </a>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <a
+                href="assets/img/gallery/meme8.jpg"
+                data-lightbox="nobitaShizuka"
+                class="text-decoration-none"
+              >
+                <img
+                  src="assets/img/gallery/meme8.jpg"
+                  alt="nobita & shizuka"
+                  class="card-img border-pink"
+                />
+              </a>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <a
+                href="assets/img/gallery/meme9.jpg"
+                data-lightbox="nobitaShizuka"
+                class="text-decoration-none"
+              >
+                <img
+                  src="assets/img/gallery/meme9.jpg"
+                  alt="nobita & shizuka"
+                  class="card-img border-pink"
+                />
+              </a>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <a
+                href="assets/img/gallery/meme10.jpg"
+                data-lightbox="nobitaShizuka"
+                class="text-decoration-none"
+              >
+                <img
+                  src="assets/img/gallery/meme10.jpg"
+                  alt="nobita & shizuka"
+                  class="card-img border-pink"
+                />
+              </a>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <a
+                href="assets/img/gallery/meme11.jpg"
+                data-lightbox="nobitaShizuka"
+                class="text-decoration-none"
+              >
+                <img
+                  src="assets/img/gallery/meme11.jpg"
+                  alt="nobita & shizuka"
+                  class="card-img border-pink"
+                />
+              </a>
+            </div> --> 
+            
+          </div>
+
+          
+        </div>
+      </section>
+
+      <section id="gallery-section" class="gallery-section py-5 ">
+        <div
+          class="container"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          <div class="section-title">
+            <!-- <h1 class="text-black fw-bold">Memes</h1> -->
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-12 text-center">
+              <iframe
+                class="border-pink"
+                width="100%"
+                height="500"
+                src="https://www.youtube.com/embed/FVepY5f2oME?si=ogX94bvKSGQxTqyE"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          </div>
+          </section>
+
+      <!-- gift section -->
+      <section id="gift-section" class="gift-section py-5 section-bg">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="section-title">
+                <h1 class="text-white fw-bold">Marketing Wallet</h1>
+              </div>
+
+              <div class="row justify-content-center"> 
+
+                <button
+                  type="button"
+                  class="text-center btn btn-lg btn-pink mb-4 rounded-pill"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseHadiah"
+                >
+                  <i class="fas fa-fw fa-gift"></i> Send Some SOL for Marketing
+                </button>
+                <div class="collapse" id="collapseHadiah"> 
+
+                  <div class="my-4 mx-auto position-relative credit-card"> 
+                    <img
+                      src="assets/img/card/solana.png"
+                      alt="Solana"
+                      class="card-logo"
+                      style="top: 20px"
+                    /> 
+                    <div class="card-container"> 
+                      <img
+                        src="assets/img/card/sim.png"
+                        alt="sim"
+                        class="card-sim"
+                      />
+                      <div class="card-number">
+                       <p style="font-size: small; padding-top: 18px;">xxxxxxxxxxxxxxxxx</p> 
+                      </div>
+                    </div>
+                    <div class="card-name mt-2">Sol Address</div>
+                    <a
+                      style="cursor: pointer"
+                      onclick="copyText(this)"
+                      class="copy-button btn btn-light mt-3"
+                    >
+                      <i class="fas fa-regular fa-copy"></i>
+                      Copy
+                    </a>
+                  </div>
+                </div> 
+                </div>
+               </div> 
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer id="footer" class="mb-5 pb-5">
+        <div class="container py-5 text-center position-relative">
+          <div class="row">
+            <div class="col-12 my-3">
+              <a
+                href="#"
+                target="_blank"
+                class="text-decoration-none text-black fw-bold"
+                >&copy; 2025. Made with ❤ by $JUPTHEGOAT</a
+              >
+            </div>
+            <div class="col-12 my-3">
+              <a href="#home-section" class="text-black"
+                ><i class="fas fa-fw fa-arrow-up"></i> Back to top</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- lightbox2 -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"
+      integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJwvCKSgafpy5gwNqKmgUfIBraVwkKI+Cz0SEQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- sweetalert2 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.2/dist/sweetalert2.all.min.js"
+      integrity="sha256-iSkyJ41luwYhZX4JnDUop92wix0y8SBGAW5tCnnCfZ4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- masonry -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      crossorigin="anonymous"
+      async
+    ></script>
+    <!-- js -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
