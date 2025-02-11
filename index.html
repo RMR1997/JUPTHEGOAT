@@ -104,14 +104,19 @@
             <i class="fas fa-fw fa-image"></i>
           </a>
         </li>
-        <li>
+        <!-- <li>
           <a href="#gift-section">
             <i class="fas fa-fw fa-gift"></i>
           </a>
-        </li>
+        </li> -->
            <li>
           <a href="#how-to-buy-section">
             <i class="fa-solid fa-money-bill"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#home-section">
+            <i class="fa-solid fa-house"></i>
           </a>
         </li>
         
@@ -196,7 +201,7 @@
 
           <div class="d-flex flex-wrap justify-content-center gap-3">
             <a class="btn btn-lg btn-pink rounded-pill text-center" href="https://jup.ag/" target="_blank">
-              <i class="fa-brands fa-chart-line"></i> Jupiter
+              <i class="fa-solid fa-chart-line"></i> Jupiter
             </a>
             <a class="btn btn-lg btn-pink rounded-pill text-center" href="https://dexscreener.com/" target="_blank">
               <i class="fa-solid fa-chart-line"></i> Dexscreener
@@ -239,46 +244,55 @@
   </div>
 </section>
 
-      <!-- acara section -->
-      <section id="why-section" class="why-section py-5">
-        <div
-          class="container"
-          data-aos="fade-up"
-          data-aos-easing="linear"
-          data-aos-duration="1500"
-        >
-          <div class="row justify-content-center">
-            <div class="col-lg-8">
-              <div class="section-title">
-                <h1 class="text-black fw-bold">
-                  Why you should buy?
-                </h1>
-              </div>
+<!-- Section Model 3D & Acara Section -->
+<section id="model-section" class="py-5">
+  <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+    <div class="row align-items-center">
+      
+      <!-- Kolom Kiri: Acara Section -->
+      <div class="col-lg-6 text-center text-lg-start">
 
-              <div class="row px-3 text-center">
-                <div
-                  class="col-lg-6 border my-2 rounded p-3 card-acara"
-                  data-aos="fade-right"
-                  data-aos-easing="linear"
-                  data-aos-duration="1500"
-                >
-                  <h4>$JUPTHEGOAT</h4>
-                  <hr />
-                  <p><i class=""></i>PERFECT TICKER</p>
-                  <p><i class=""></i>YOU ARE SMART CATDETS</p>
-                  <p><i class=""></i>THERE IS NO REASON NOT TO BUY IT </p>
-                  <a
-                    class="btn btn-lg btn-pink rounded-pill"
-                    href="https://jup.ag/swap/SOL-AzJYGdSmvfLSYaUi4zAf2ENkeyVLG9skm9Uqwnyc3PKz"
-                    target="_blank"
-                    ></i> Buy Now</a
-                  >
+        <!-- Acara Section -->
+        <section id="why-section" class="why-section mt-4">
+          <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+            <div class="row justify-content-center">
+              <div class="col-lg-12">
+                <div class="section-title">
+                  <h1 class="text-black fw-bold">Why you should buy?</h1>
+                </div>
+
+                <div class="row px-3 text-center">
+                  <div class="col border my-2 rounded p-3 card-acara" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+                    <h4>$JUPTHEGOAT</h4>
+                    <hr />
+                    <p><i class=""></i>PERFECT TICKER</p>
+                    <p><i class=""></i>YOU ARE SMART CATDETS</p>
+                    <p><i class=""></i>THERE IS NO REASON NOT TO BUY IT</p>
+                    <a class="btn btn-lg btn-pink rounded-pill" href="https://jup.ag/swap/SOL-AzJYGdSmvfLSYaUi4zAf2ENkeyVLG9skm9Uqwnyc3PKz" target="_blank"> Buy Now</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
+
+      <!-- Kolom Kanan: Model 3D -->
+      <div class="col-lg-6 text-center">
+        <model-viewer 
+          src="models/catgoat.glb" 
+          alt="3D Model Cat"
+          auto-rotate 
+          camera-controls
+          disable-zoom
+          style="width: 100%; max-width: 500px; height: 500px;">
+        </model-viewer>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
       <!-- Lokasi Section -->
       <section id="chart-section" class="chart-section py-5 section-bg">
@@ -461,7 +475,7 @@
           data-aos-duration="1500"
         >
           <div class="section-title">
-            <h1 class="text-white fw-bold">Catdets</h1>
+            <h1 class="text-white fw-bold">Memes</h1>
           </div>
 
           <div class="row" data-masonry='{"percentPosition": true }'>
@@ -504,19 +518,19 @@
                 />
               </a>
             </div>
-            <div class="col-sm-6 col-lg-4 mb-4">
-              <a
-                href="assets/img/gallery/cat2.png"
+            <!-- <div class="col-sm-6 col-lg-4 mb-4"> -->
+              <!-- <a
+                href="assets/img/gallery/cat2.glb"
                 data-lightbox="JUPTHEGOAT"
                 class="text-decoration-none"
               >
                 <img
-                  src="assets/img/gallery/cat2.png"
+                  src="assets/img/gallery/cat2.glb"
                   alt="JUPTHEGOAT"
                   class="card-img border-pink"
                 />
-              </a>
-            </div>
+              </a> -->
+            <!-- </div> -->
             <!-- <div class="col-sm-6 col-lg-4 mb-4">
               <a
                 href="assets/img/gallery/meme5.jpg"
@@ -644,7 +658,7 @@
           </section>
 
       <!-- gift section -->
-      <section id="gift-section" class="gift-section py-5 section-bg">
+      <!-- <section id="gift-section" class="gift-section py-5 section-bg">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-8">
@@ -697,7 +711,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- footer -->
       <footer id="footer" class="mb-5 pb-5">
